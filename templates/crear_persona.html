@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{%block titulo%}Crear Persona{%endblock%}
+{%block body%}
+<form method="post">
+    {%csrf_token%} 
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>
+
+{%endblock body%}
